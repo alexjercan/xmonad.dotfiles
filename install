@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+rm -rf ~/.config/xmonad
+ln -s $(pwd)/xmonad ~/.config/xmonad
+
+rm -rf ~/.config/xmobar
+ln -s $(pwd)/xmobar ~/.config/xmobar
+

@@ -1,0 +1,36 @@
+#!/bin/sh -eu
+
+
+# Your source directory. Default is the config dir, if it can be found.
+SRC_DIR=
+
+# Where will be the executable placed
+INSTALL_DIR="$HOME/.cabal/bin"
+
+# ghcup-env
+. "$HOME/.ghcup/env"
+##############################################################################
+
+# config
+
+output="$1"
+
+if [ "$SRC_DIR" = "" ]; then
+    # look for the config directory, fall back to the old one
+    SRC_DIR="${XMONAD_CONFIG_DIR:-$HOME/.config/xmonad}"
+    if test -f "$SRC_DIR/build"; then
+	:
+    else
+	SRC_DIR="$HOME/.xmonad"
+    fi
+fi
+
+if [ "$INSTALL_DIR" = "" ]; then
+    INSTALL_DIR = "$SRC_DIR"
+fi
+
+cd "$SRC_DIR"
+
+stack install
+
+ln -sf "$INSTALL_DIR/xmonad" "$output"

@@ -1,0 +1,16 @@
+git
+build-essential
+libffi-dev
+libffi8ubuntu1
+libgmp-dev
+libgmp10
+libncurses-dev
+libncurses5
+libtinfo5
+libx11-dev
+libxft-dev
+libxinerama-dev
+libxrandr-dev
+libxss-dev
+libasound2-dev
+
