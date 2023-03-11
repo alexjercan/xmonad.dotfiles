@@ -4,9 +4,9 @@
 
 ##### My dotfiles for XMonad
 
-![desktop](./resources/wallpaper.png)
-![desktop](./resources/stuff.png)
-![desktop](./resources/neovim.png)
+![wallpaper](./resources/wallpaper.png)
+![stuff](./resources/stuff.png)
+![neovim](./resources/neovim.png)
 
 </div>
 
