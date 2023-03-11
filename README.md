@@ -1,6 +1,14 @@
+<div align="center">
+
 # XMonad Config
 
-This repository contains my dotfiles for XMonad.
+##### My dotfiles for XMonad
+
+![desktop](./resources/wallpaper.png)
+![desktop](./resources/stuff.png)
+![desktop](./resources/neovim.png)
+
+</div>
 
 ## Install (Ubuntu/Debian)
 
